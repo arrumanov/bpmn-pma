@@ -351,7 +351,7 @@ Start writing and previewing instantly. -->
 * Название **Задачи ДОЛЖНО**[^10] содержать один или несколько глаголов в неопределенной форме совершенного вида (*ответ на вопрос: “что сделать?”*).   
 * Название **Задачи НЕ ДОЛЖНО** содержать подробного описания (более 200 символов) или особенностей исполнения Задачи[^11].
 
-| ![](https://arrumanov.github.io/bpmn-pma/images/image.png)19] | ![](https://arrumanov.github.io/bpmn-pma/images/image.png)20] | ![](https://arrumanov.github.io/bpmn-pma/images/image.png)21] |
+| ![](https://arrumanov.github.io/bpmn-pma/images/image81.png) | ![](https://arrumanov.github.io/bpmn-pma/images/image43.png) | ![](https://arrumanov.github.io/bpmn-pma/images/image51.png) |
 | :---: | :---: | :---: |
 
 В остальном см раздел \- **Правила моделирования Действий.**
@@ -366,12 +366,12 @@ Start writing and previewing instantly. -->
 
 | № | Тип подпроцесса или повторно-используемого действия | Описание | Правило моделирования  |
 | :---- | :---- | :---- | :---- |
-| 1 | **Вызов действия** (**Call Activity**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)22] | Обозначает вызов внешнего целостного (с точки зрения назначения, входов, выходов) **Процесса,** определяемого идентификатором **Процесса**. | ВОЗМОЖНО |
-| 2 | **Развернутый Подпроцесс** (**Expanded Sub-Process**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)23] | Обозначает группировку элементов для ограничения области видимости (scope) и декомпозиции.   Запускается потоком управления из родительского процесса и завершается передачей управления в него.  | ВОЗМОЖНО |
-| 3 | **Свернутый Подпроцесс** (**Collapsed Sub-Process**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)24] | Обозначает вариант Подпроцесса, свернутый в один элемент для сокращения места, занимаемого им на Диаграмме. | ВОЗМОЖНО |
-| 4 | **Транзакционный Подпроцесс** (**Transaction**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)25] | Обозначает подпроцесс, для которого задано несколько вариантов выхода и только успешное завершение в виде выходящего потока управления. Неуспешное завершение отображается использованием завершающего события с типом “Ошибка” и запуском всех компенсаций. | ЗАПРЕЩЕНО[^12] |
-| 5 | **Подпроцесс По Событию** (**Event Sub-Process**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)26] | Обозначает Подпроцесс, который может быть выполнен один раз в любой момент, многократно или не выполнен вовсе пока выполняется основной процесс**.** | ВОЗМОЖНО |
-| 6 | **Подпроцесс По Требованию** (**Ad-Hoc**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)27]![](https://arrumanov.github.io/bpmn-pma/images/image.png)28] |  | ЗАПРЕЩЕНО[^13] |
+| 1 | **Вызов действия** (**Call Activity**)  ![](https://arrumanov.github.io/bpmn-pma/images/image2.png) | Обозначает вызов внешнего целостного (с точки зрения назначения, входов, выходов) **Процесса,** определяемого идентификатором **Процесса**. | ВОЗМОЖНО |
+| 2 | **Развернутый Подпроцесс** (**Expanded Sub-Process**) ![](https://arrumanov.github.io/bpmn-pma/images/image59.png) | Обозначает группировку элементов для ограничения области видимости (scope) и декомпозиции.   Запускается потоком управления из родительского процесса и завершается передачей управления в него.  | ВОЗМОЖНО |
+| 3 | **Свернутый Подпроцесс** (**Collapsed Sub-Process**)  ![](https://arrumanov.github.io/bpmn-pma/images/image102.png) | Обозначает вариант Подпроцесса, свернутый в один элемент для сокращения места, занимаемого им на Диаграмме. | ВОЗМОЖНО |
+| 4 | **Транзакционный Подпроцесс** (**Transaction**)  ![](https://arrumanov.github.io/bpmn-pma/images/image105.png) | Обозначает подпроцесс, для которого задано несколько вариантов выхода и только успешное завершение в виде выходящего потока управления. Неуспешное завершение отображается использованием завершающего события с типом “Ошибка” и запуском всех компенсаций. | ЗАПРЕЩЕНО[^12] |
+| 5 | **Подпроцесс По Событию** (**Event Sub-Process**)  ![](https://arrumanov.github.io/bpmn-pma/images/image39.png) | Обозначает Подпроцесс, который может быть выполнен один раз в любой момент, многократно или не выполнен вовсе пока выполняется основной процесс**.** | ВОЗМОЖНО |
+| 6 | **Подпроцесс По Требованию** (**Ad-Hoc**) ![](https://arrumanov.github.io/bpmn-pma/images/image15.png)![](https://arrumanov.github.io/bpmn-pma/images/image90.png) |  | ЗАПРЕЩЕНО[^13] |
 
 #### Правила моделирования с участием Подпроцессов {#правила-моделирования-с-участием-подпроцессов}
 
@@ -389,9 +389,9 @@ Start writing and previewing instantly. -->
 
 | № | Тип маркера  | Описание | Правило моделирования  |
 | :---- | :---- | :---- | :---- |
-| 1 | **Компенсирующее Действие** (**Compensation**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)29] | Обозначает Действие, которое отменяет или исправляет выполненное ранее действие. | ВОЗМОЖНО |
-| 2 | **Параллельный** **Цикл По Объектам** ( (**Multi-Instance \- Parallel**) или  **Последовательный** **Цикл По Объектам** (**Multi-Instance \-Sequential**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)30]  | Обозначает, что несколько экземпляров этого действия выполняют параллельно или последовательно соответственно. | ВОЗМОЖНО |
-| 3 | **Стандартный Цикл** (**Standard Loop**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)31] | Обозначает повторение выполнения этого действия, пока не будет выполнено определенное условие**,** проверяемое при завершении каждого повторения. | ВОЗМОЖНО |
+| 1 | **Компенсирующее Действие** (**Compensation**)  ![](https://arrumanov.github.io/bpmn-pma/images/image60.png) | Обозначает Действие, которое отменяет или исправляет выполненное ранее действие. | ВОЗМОЖНО |
+| 2 | **Параллельный** **Цикл По Объектам** ( (**Multi-Instance \- Parallel**) или  **Последовательный** **Цикл По Объектам** (**Multi-Instance \-Sequential**)  ![](https://arrumanov.github.io/bpmn-pma/images/image35.png)  | Обозначает, что несколько экземпляров этого действия выполняют параллельно или последовательно соответственно. | ВОЗМОЖНО |
+| 3 | **Стандартный Цикл** (**Standard Loop**)  ![](https://arrumanov.github.io/bpmn-pma/images/image86.png) | Обозначает повторение выполнения этого действия, пока не будет выполнено определенное условие**,** проверяемое при завершении каждого повторения. | ВОЗМОЖНО |
 
 #### Правила моделирования с участием маркеров действий {#правила-моделирования-с-участием-маркеров-действий}
 
@@ -401,21 +401,21 @@ Start writing and previewing instantly. -->
 
 * **Действие** (за исключением **Подпроцесса По Событию)**  ОБЯЗАНО иметь ровно 1 (один) входящий **Поток Управления** и ровно 1 (один) выходящий **Поток Управления** .[^15] 
 
-| ![](https://arrumanov.github.io/bpmn-pma/images/image.png)32] | ![](https://arrumanov.github.io/bpmn-pma/images/image.png)33] | ![](https://arrumanov.github.io/bpmn-pma/images/image.png)34] |
+| ![](https://arrumanov.github.io/bpmn-pma/images/image44.png) | ![](https://arrumanov.github.io/bpmn-pma/images/image104.png) | ![](https://arrumanov.github.io/bpmn-pma/images/image24.png) |
 | :---- | :---- | :---- |
 
 * **Действие** (за исключением **Подпроцесс По Событию)** МОЖЕТ иметь неограниченное количество **Прикрепленных Событий**.
 
-| ![](https://arrumanov.github.io/bpmn-pma/images/image.png)35] |  |
+| ![](https://arrumanov.github.io/bpmn-pma/images/image31.png) |  |
 | :---: | :---: |
 
 * **Действие** МОЖЕТ иметь неограниченное количество  входящих и исходящих **Потоков** **Сообщений**. Такие **Потоки сообщений** ДОЛЖНЫ[^16] вести за границу **Пула,** к другому **Участнику**.
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)36]
+![](https://arrumanov.github.io/bpmn-pma/images/image10.png)
 
 * **Действие МОЖЕТ** иметь до 5 **Ассоциативных Связей** включительно[^17]. **Действие НЕ МОЖЕТ** иметь 6 или больше **Ассоциативных Связей**.
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)37]![](https://arrumanov.github.io/bpmn-pma/images/image.png)38]
+![](https://arrumanov.github.io/bpmn-pma/images/image58.png)![](https://arrumanov.github.io/bpmn-pma/images/image34.png)
 
 7. ## Потоки {#потоки}
 
@@ -425,10 +425,10 @@ Start writing and previewing instantly. -->
 
 | № | Тип Потока | Описание | Правило моделирования |
 | :---- | :---- | :---- | :---- |
-| 1 | **Поток Управления** (**Sequence Flow**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)39] | Обозначает передачу управления и последовательность выполнения Действий в Процессе. | ВОЗМОЖНО |
-| 2 | **Поток Сообщений** (**Message Flow**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)40] | Обозначает передачу Сообщений между участниками (Participants). | ВОЗМОЖНО |
-| 4 | **Ассоциативная Связь** (**Association Flow**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)41] | Обозначает связь  Артефактов  с графическими элементами на схеме | ВОЗМОЖНО |
-| 5 | **Условный Поток Управления**![](https://arrumanov.github.io/bpmn-pma/images/image.png)42] |  | ЗАПРЕЩЕНО[^18] |
+| 1 | **Поток Управления** (**Sequence Flow**)  ![](https://arrumanov.github.io/bpmn-pma/images/image6.png) | Обозначает передачу управления и последовательность выполнения Действий в Процессе. | ВОЗМОЖНО |
+| 2 | **Поток Сообщений** (**Message Flow**)  ![](https://arrumanov.github.io/bpmn-pma/images/image49.png) | Обозначает передачу Сообщений между участниками (Participants). | ВОЗМОЖНО |
+| 4 | **Ассоциативная Связь** (**Association Flow**) ![](https://arrumanov.github.io/bpmn-pma/images/image56.png) | Обозначает связь  Артефактов  с графическими элементами на схеме | ВОЗМОЖНО |
+| 5 | **Условный Поток Управления**![](https://arrumanov.github.io/bpmn-pma/images/image84.png) |  | ЗАПРЕЩЕНО[^18] |
 
       2. ### Правила моделирования потоков {#правила-моделирования-потоков}
 
@@ -436,11 +436,11 @@ Start writing and previewing instantly. -->
 * **Потоки Управления**  МОГУТ выходить только из **Действия**, **Развилки**, **События**.
 
 ***Примечание:**  **Потоки Управления**, выходящие из **Прикрепленных Событий** к **Действиям**, не считаются исходящими из элемента Действие, поэтому их МОЖЕТ быть больше одного.*  
-*![](https://arrumanov.github.io/bpmn-pma/images/image.png)43]*
+*![](https://arrumanov.github.io/bpmn-pma/images/image20.png)*
 
 * **Действие** с **Маркером Компенсирующего Действи**я **НЕ МОЖЕТ** иметь исходящий **Поток Управления**
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)44]  
+![](https://arrumanov.github.io/bpmn-pma/images/image99.png)  
 	
 
 ###  
@@ -457,8 +457,8 @@ Start writing and previewing instantly. -->
 
 | № | Название | Описание | Правило моделирования |
 | :---- | :---- | :---- | :---- |
-| 1 | **Событие-Обработчик** (**Catch Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)45] *Промежуточное события обработки сообщения приведено как пример, событий обработчиков больше (см ниже)* | Обозначает ожидание  наступления этого события **Процессом**. Маркер **События-Обработчика** выполнен контуром без заливки. | ВОЗМОЖНО |
-| 2 | **Событие-Инициатор** (**Throw Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)46] *Промежуточное события отправки сообщения приведено как пример, событий-инициаторов больше (см ниже)* | Обозначает, что событие произошло в процессе. Маркер **События-Инициатора** выполнен контуром с заливкой черным цветом, заливается содержимое кружка. | ВОЗМОЖНО |
+| 1 | **Событие-Обработчик** (**Catch Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image123.png) *Промежуточное события обработки сообщения приведено как пример, событий обработчиков больше (см ниже)* | Обозначает ожидание  наступления этого события **Процессом**. Маркер **События-Обработчика** выполнен контуром без заливки. | ВОЗМОЖНО |
+| 2 | **Событие-Инициатор** (**Throw Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image74.png) *Промежуточное события отправки сообщения приведено как пример, событий-инициаторов больше (см ниже)* | Обозначает, что событие произошло в процессе. Маркер **События-Инициатора** выполнен контуром с заливкой черным цветом, заливается содержимое кружка. | ВОЗМОЖНО |
 
 #### Правила моделирования событий по типу воздействий {#правила-моделирования-событий-по-типу-воздействий}
 
@@ -472,13 +472,13 @@ Start writing and previewing instantly. -->
 
 | № | Название | Описание | Правило моделирования |
 | :---- | :---- | :---- | :---- |
-| 1 | **Начальное Событие** (**Start Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)47] *Стартовое событие без маркера приведено как пример, стартовых событий больше* | Обозначает запуск процесса. | ОБЯЗАТЕЛЬНО |
-| 2 | **Конечное Событие** (**End Event**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)48] *Завершающая событие без маркера приведено как пример, стартовых событий больше* | Обозначает уничтожение **ТОКЕНА** при достижении данного события. Если токенов в экземпляре процесса после уничтожения больше нет, то экземпляр считается завершенным.   | ОБЯЗАТЕЛЬНО |
-| 3  | **Промежуточное Событие расположенное на**  **Потоке  (Intermediate Events in Normal Flow) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)49]** | Отображает **Событие**, произошедшее в ходе выполнения Процесса; бывает как инициатором, так и обработчиком, в зависимости от **Маркера События**. | ВОЗМОЖНО  |
-| 4.1 | **Прикрепленное Непрерывающее Событие** (**Intermediate Attached Non-Interrupting Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)50] *Непрерывающее прикрепленное событие по таймеру приведено как пример, непрерывающих прикрепленных событий больше.* | Не прерывает выполнение **Действия** к границе которого **Событие** прикреплено. При этом активирует дополнительный исходящий **Поток Управления**, который выполняется одновременно с **Действием** при наступлении события. Бывает только обработчиком. | ВОЗМОЖНО |
-| 4.2 | **Прикрепленное Прерывающее Событие** (**Intermediate Attached Interrupting Event**)  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)51] *Прерывающее прикрепленное событие по ошибке приведено как пример, прерывающих прикрепленных событий больше.*  | При наступлении события прерывает выполнение **Действия** к границе которого **Событие** прикреплено и  активирует дополнительный **Поток Управления**, исходящий из этого события. | ВОЗМОЖНО |
-| 5.1 | **Непрерывающее Стартовое Событие Событийного Подпроцесса  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)52]** *Непрерывающие стартовое событие событийного подпроцесса  по условию приведено как пример, непрерывающих стартовых  событий событийного подпроцесса больше.* | Запускает процесс-обработчик (при условии наличия токенов в основном процессе), при этом не прерывая его.  | ВОЗМОЖНО |
-| 5.2 | **Прерывающее Стартовое Событие Событийного Подпроцесса  ![](https://arrumanov.github.io/bpmn-pma/images/image.png)53]** *Превающее стартовое событие событийного подпроцесса по условию приведено как пример, превающющих стартовых событий событийного подпроцесса больше.*  | Запускает процесс-обработчик (при условии наличия токенов в основном процессе), при этом  прерывая его и уничтожая все токены. | ВОЗМОЖНО |
+| 1 | **Начальное Событие** (**Start Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image112.png) *Стартовое событие без маркера приведено как пример, стартовых событий больше* | Обозначает запуск процесса. | ОБЯЗАТЕЛЬНО |
+| 2 | **Конечное Событие** (**End Event**)  ![](https://arrumanov.github.io/bpmn-pma/images/image62.png) *Завершающая событие без маркера приведено как пример, стартовых событий больше* | Обозначает уничтожение **ТОКЕНА** при достижении данного события. Если токенов в экземпляре процесса после уничтожения больше нет, то экземпляр считается завершенным.   | ОБЯЗАТЕЛЬНО |
+| 3  | **Промежуточное Событие расположенное на**  **Потоке  (Intermediate Events in Normal Flow) ![](https://arrumanov.github.io/bpmn-pma/images/image95.png)** | Отображает **Событие**, произошедшее в ходе выполнения Процесса; бывает как инициатором, так и обработчиком, в зависимости от **Маркера События**. | ВОЗМОЖНО  |
+| 4.1 | **Прикрепленное Непрерывающее Событие** (**Intermediate Attached Non-Interrupting Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image16.png) *Непрерывающее прикрепленное событие по таймеру приведено как пример, непрерывающих прикрепленных событий больше.* | Не прерывает выполнение **Действия** к границе которого **Событие** прикреплено. При этом активирует дополнительный исходящий **Поток Управления**, который выполняется одновременно с **Действием** при наступлении события. Бывает только обработчиком. | ВОЗМОЖНО |
+| 4.2 | **Прикрепленное Прерывающее Событие** (**Intermediate Attached Interrupting Event**)  ![](https://arrumanov.github.io/bpmn-pma/images/image67.png) *Прерывающее прикрепленное событие по ошибке приведено как пример, прерывающих прикрепленных событий больше.*  | При наступлении события прерывает выполнение **Действия** к границе которого **Событие** прикреплено и  активирует дополнительный **Поток Управления**, исходящий из этого события. | ВОЗМОЖНО |
+| 5.1 | **Непрерывающее Стартовое Событие Событийного Подпроцесса  ![](https://arrumanov.github.io/bpmn-pma/images/image1.png)** *Непрерывающие стартовое событие событийного подпроцесса  по условию приведено как пример, непрерывающих стартовых  событий событийного подпроцесса больше.* | Запускает процесс-обработчик (при условии наличия токенов в основном процессе), при этом не прерывая его.  | ВОЗМОЖНО |
+| 5.2 | **Прерывающее Стартовое Событие Событийного Подпроцесса  ![](https://arrumanov.github.io/bpmn-pma/images/image18.png)** *Превающее стартовое событие событийного подпроцесса по условию приведено как пример, превающющих стартовых событий событийного подпроцесса больше.*  | Запускает процесс-обработчик (при условии наличия токенов в основном процессе), при этом  прерывая его и уничтожая все токены. | ВОЗМОЖНО |
 
 ##### Правила моделирования событий по месту применения {#правила-моделирования-событий-по-месту-применения}
 
@@ -492,22 +492,22 @@ Start writing and previewing instantly. -->
 
 | № | Название | Описание | Правило моделирования |
 | :---- | :---- | :---- | :---- |
-| 1 | **Простое Событие** (**None Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)54] *Здесь и далее цвета с иллюстративной целью, стандарт BPMN не оперирует цветами* | Обозначает отсутствие маркера | ВОЗМОЖНО |
-| 2 | **Событие-Сообщение** (**Message Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)55] ![](https://arrumanov.github.io/bpmn-pma/images/image.png)56] | Обозначает обмен сообщениями между Участниками (Participants). | ВОЗМОЖНО |
-| 3 | **Событие-Таймер** (**Timer Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)57]![](https://arrumanov.github.io/bpmn-pma/images/image.png)58] | Обозначает цикл во времени, интервал или конкретный момент времени. | ВОЗМОЖНО |
-| 4 | **Событие-Ошибка** (**Error Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)59]![](https://arrumanov.github.io/bpmn-pma/images/image.png)60]![](https://arrumanov.github.io/bpmn-pma/images/image.png)61] | Отображает связь события с ошибкой. | ВОЗМОЖНО |
-| 5 | **Событие-Отмена** (**Cancel Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)62] | Обозначает связь события с “отменой”, используется только в транзакционный подпроцессах. | ЗАПРЕЩЕНО |
-| 6 | **Событие-Компенсация** (**Compensation Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)63]![](https://arrumanov.github.io/bpmn-pma/images/image.png)64]![](https://arrumanov.github.io/bpmn-pma/images/image.png)65]![](https://arrumanov.github.io/bpmn-pma/images/image.png)66] | Отображает связь события с компенсацией. | ВОЗМОЖНО |
-| 7 | **Событие-Условие** (**Conditional Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)67]![](https://arrumanov.github.io/bpmn-pma/images/image.png)68]![](https://arrumanov.github.io/bpmn-pma/images/image.png)69]![](https://arrumanov.github.io/bpmn-pma/images/image.png)70] | Обозначает ожидание наступления определенных условий, определяемых контекстом процесса. | ВОЗМОЖНО |
-| 8 | **Событие-Останов** (**Terminate Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)71] | Обозначает немедленное прекращение текущего процесса (а также вложенных подпроцессов) и уничтожение всех токенов в области видимости (scope). Не затрагивает потоки внешнего контура. | ВОЗМОЖНО |
-| 9 | **Событие-Ссылка** (**Link Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)72]![](https://arrumanov.github.io/bpmn-pma/images/image.png)73] |  | ЗАПРЕЩЕНО[^19] |
-| 10 | **Событие-Сигнал** (**Signal Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)74]![](https://arrumanov.github.io/bpmn-pma/images/image.png)75]![](https://arrumanov.github.io/bpmn-pma/images/image.png)76]![](https://arrumanov.github.io/bpmn-pma/images/image.png)77]![](https://arrumanov.github.io/bpmn-pma/images/image.png)78]![](https://arrumanov.github.io/bpmn-pma/images/image.png)79] |  | ЗАПРЕЩЕНО[^20] |
-| 11 | **Множественное Событие** (**Multiple Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)80]![](https://arrumanov.github.io/bpmn-pma/images/image.png)81]![](https://arrumanov.github.io/bpmn-pma/images/image.png)82] |  | ЗАПРЕЩЕНО[^21] |
-| 12 | **Параллельное Множественное Событие** (**Parallel Multiple Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)83]![](https://arrumanov.github.io/bpmn-pma/images/image.png)84] |  | ЗАПРЕЩЕНО[^22] |
+| 1 | **Простое Событие** (**None Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image73.png) *Здесь и далее цвета с иллюстративной целью, стандарт BPMN не оперирует цветами* | Обозначает отсутствие маркера | ВОЗМОЖНО |
+| 2 | **Событие-Сообщение** (**Message Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image36.png) ![](https://arrumanov.github.io/bpmn-pma/images/image46.png) | Обозначает обмен сообщениями между Участниками (Participants). | ВОЗМОЖНО |
+| 3 | **Событие-Таймер** (**Timer Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image48.png)![](https://arrumanov.github.io/bpmn-pma/images/image21.png) | Обозначает цикл во времени, интервал или конкретный момент времени. | ВОЗМОЖНО |
+| 4 | **Событие-Ошибка** (**Error Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image72.png)![](https://arrumanov.github.io/bpmn-pma/images/image40.png)![](https://arrumanov.github.io/bpmn-pma/images/image68.png) | Отображает связь события с ошибкой. | ВОЗМОЖНО |
+| 5 | **Событие-Отмена** (**Cancel Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image88.png) | Обозначает связь события с “отменой”, используется только в транзакционный подпроцессах. | ЗАПРЕЩЕНО |
+| 6 | **Событие-Компенсация** (**Compensation Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image30.png)![](https://arrumanov.github.io/bpmn-pma/images/image87.png)![](https://arrumanov.github.io/bpmn-pma/images/image13.png)![](https://arrumanov.github.io/bpmn-pma/images/image125.png) | Отображает связь события с компенсацией. | ВОЗМОЖНО |
+| 7 | **Событие-Условие** (**Conditional Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image65.png)![](https://arrumanov.github.io/bpmn-pma/images/image114.png)![](https://arrumanov.github.io/bpmn-pma/images/image57.png)![](https://arrumanov.github.io/bpmn-pma/images/image11.png) | Обозначает ожидание наступления определенных условий, определяемых контекстом процесса. | ВОЗМОЖНО |
+| 8 | **Событие-Останов** (**Terminate Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image8.png) | Обозначает немедленное прекращение текущего процесса (а также вложенных подпроцессов) и уничтожение всех токенов в области видимости (scope). Не затрагивает потоки внешнего контура. | ВОЗМОЖНО |
+| 9 | **Событие-Ссылка** (**Link Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image5.png)![](https://arrumanov.github.io/bpmn-pma/images/image103.png) |  | ЗАПРЕЩЕНО[^19] |
+| 10 | **Событие-Сигнал** (**Signal Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image85.png)![](https://arrumanov.github.io/bpmn-pma/images/image122.png)![](https://arrumanov.github.io/bpmn-pma/images/image119.png)![](https://arrumanov.github.io/bpmn-pma/images/image83.png)![](https://arrumanov.github.io/bpmn-pma/images/image22.png)![](https://arrumanov.github.io/bpmn-pma/images/image106.png) |  | ЗАПРЕЩЕНО[^20] |
+| 11 | **Множественное Событие** (**Multiple Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image100.png)![](https://arrumanov.github.io/bpmn-pma/images/image80.png)![](https://arrumanov.github.io/bpmn-pma/images/image92.png) |  | ЗАПРЕЩЕНО[^21] |
+| 12 | **Параллельное Множественное Событие** (**Parallel Multiple Event**) ![](https://arrumanov.github.io/bpmn-pma/images/image54.png)![](https://arrumanov.github.io/bpmn-pma/images/image121.png) |  | ЗАПРЕЩЕНО[^22] |
 
  
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)85]
+![](https://arrumanov.github.io/bpmn-pma/images/image117.png)
 
 ##### Правила моделирования событий по маркеру {#правила-моделирования-событий-по-маркеру}
 
@@ -528,11 +528,11 @@ Start writing and previewing instantly. -->
 
 | № | Тип развилки | Описание | Правило использования |
 | :---- | :---- | :---- | :---- |
-| 1 | **Развилка ИЛИ** (Exclusive Gateway) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)86] | Используется: для разветвления  когда после развилки Должен быть использован только один **Поток Управления**. для слияния, когда необходимо просто пропустить токен по **Поток Управления.** | ВОЗМОЖНО |
-| 2 | **Развилка И** (**Parallel Gateway**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)87] | Используется: для разветвления **Потоков Управления**, когда ДОЛЖНЫ быть отправлены токены во все исходящие **Потоки Управления**; для слияния **Потоков Управления**, когда для продолжения ДОЛЖНЫ соединиться  все токены по всем входящим **Потоки Управления**. | ВОЗМОЖНО |
-| 3 | **Развилка И/ИЛИ** (**Inclusive Gateway**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)88] | Используется, когда одновременно истинными могут быть несколько условий на потоках управления Правило на расхождение: Процесс продолжается по всем исходящим потокам, для которых условие верно. Правило на схождение: Ждет столько токенов, сколько потенциально может дойти до развилки. Только после этого процесс продолжится | РАЗРЕШЕНО |
-| 4 | **Развилка по событию (Event-based Gateway) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)89]** | Используется для определения потока управления, по которому следует отправить токен вследствие свершившегося события. | РАЗРЕШЕНО |
-| 5 | **Комплексная Развилка** (**Complex Gateway**) ![](https://arrumanov.github.io/bpmn-pma/images/image.png)90] |  | ЗАПРЕЩЕНО |
+| 1 | **Развилка ИЛИ** (Exclusive Gateway) ![](https://arrumanov.github.io/bpmn-pma/images/image94.png) | Используется: для разветвления  когда после развилки Должен быть использован только один **Поток Управления**. для слияния, когда необходимо просто пропустить токен по **Поток Управления.** | ВОЗМОЖНО |
+| 2 | **Развилка И** (**Parallel Gateway**) ![](https://arrumanov.github.io/bpmn-pma/images/image110.png) | Используется: для разветвления **Потоков Управления**, когда ДОЛЖНЫ быть отправлены токены во все исходящие **Потоки Управления**; для слияния **Потоков Управления**, когда для продолжения ДОЛЖНЫ соединиться  все токены по всем входящим **Потоки Управления**. | ВОЗМОЖНО |
+| 3 | **Развилка И/ИЛИ** (**Inclusive Gateway**) ![](https://arrumanov.github.io/bpmn-pma/images/image70.png) | Используется, когда одновременно истинными могут быть несколько условий на потоках управления Правило на расхождение: Процесс продолжается по всем исходящим потокам, для которых условие верно. Правило на схождение: Ждет столько токенов, сколько потенциально может дойти до развилки. Только после этого процесс продолжится | РАЗРЕШЕНО |
+| 4 | **Развилка по событию (Event-based Gateway) ![](https://arrumanov.github.io/bpmn-pma/images/image28.png)** | Используется для определения потока управления, по которому следует отправить токен вследствие свершившегося события. | РАЗРЕШЕНО |
+| 5 | **Комплексная Развилка** (**Complex Gateway**) ![](https://arrumanov.github.io/bpmn-pma/images/image120.png) |  | ЗАПРЕЩЕНО |
 
 2. ### Правила моделирования развилок {#правила-моделирования-развилок}
 
@@ -542,17 +542,17 @@ Start writing and previewing instantly. -->
 
     1. Каждое **Стартовое Событие** ДОЛЖНО иметь только 1 выходящий **Поток Управления**. ЗАПРЕЩАЕТСЯ[^23] устанавливать больше одного выходящего **Потока Управления** из стартового события.
 
-| ![](https://arrumanov.github.io/bpmn-pma/images/image.png)91] | ![](https://arrumanov.github.io/bpmn-pma/images/image.png)92] |
+| ![](https://arrumanov.github.io/bpmn-pma/images/image45.png) | ![](https://arrumanov.github.io/bpmn-pma/images/image7.png) |
 | :---: | :---: |
 
     2. Каждое **Промежуточное Событие** ДОЛЖНО[^24] иметь только 1 входящий **Поток Управления** (кроме прикрепленных он событий) и только 1 выходящий Поток Управления (кроме прикрепленного события-обработчика-компенсации). 
 
-| ![](https://arrumanov.github.io/bpmn-pma/images/image.png)93] | ![](https://arrumanov.github.io/bpmn-pma/images/image.png)94] |
+| ![](https://arrumanov.github.io/bpmn-pma/images/image116.png) | ![](https://arrumanov.github.io/bpmn-pma/images/image79.png) |
 | :---: | :---: |
 
     3. Каждое **Завершающее событие**  ДОЛЖНО иметь только 1 входящий **Поток Управления** и не иметь выходящих **Поток Управления**.
 
-| ![](https://arrumanov.github.io/bpmn-pma/images/image.png)95] | ![](https://arrumanov.github.io/bpmn-pma/images/image.png)96] |
+| ![](https://arrumanov.github.io/bpmn-pma/images/image27.png) | ![](https://arrumanov.github.io/bpmn-pma/images/image47.png) |
 | :---: | :---: |
 
 11. ## Часто встречаемые задачи {#часто-встречаемые-задачи}
@@ -563,10 +563,10 @@ Start writing and previewing instantly. -->
 
 Использование **События-Сообщения (Message Event)** или **Задачи Отправка / Получение Сообщения (Задача-Отправка Сообщения) (Send / Receive Task)** для описания процессов отправки сообщений физического мира (письма в электронной почте, мобильные сообщения, сообщения в чатах) некорректно с точки зрения PMA, т.к. данные типы элементов служат для отображения межпроцессного обмена сообщениями между участниками.
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)97]  
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)98]  
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)99]  
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)100]
+![](https://arrumanov.github.io/bpmn-pma/images/image111.png)  
+![](https://arrumanov.github.io/bpmn-pma/images/image75.png)  
+![](https://arrumanov.github.io/bpmn-pma/images/image4.png)  
+![](https://arrumanov.github.io/bpmn-pma/images/image124.png)
 
 2. ###    Отображение ответственных {#отображение-ответственных}
 
@@ -575,19 +575,19 @@ Start writing and previewing instantly. -->
 
 * Цветовая индикация
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)101]
+![](https://arrumanov.github.io/bpmn-pma/images/image101.png)
 
 * Выделение / Альтернативное написание текста внутри Активити
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)102]
+![](https://arrumanov.github.io/bpmn-pma/images/image126.png)
 
 * С помощью артефакта “Аннотация”
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)103]
+![](https://arrumanov.github.io/bpmn-pma/images/image19.png)
 
 * Продвинутый вариант в современных редакторах
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)104]
+![](https://arrumanov.github.io/bpmn-pma/images/image41.png)
 
 3. ### Отображение систем {#отображение-систем}
 
@@ -595,19 +595,19 @@ Start writing and previewing instantly. -->
 
 * С помощью артефакта “Хранилище данных”
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)105]
+![](https://arrumanov.github.io/bpmn-pma/images/image77.png)
 
 * Выделение / Альтернативное написание текста внутри Активити
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)106]
+![](https://arrumanov.github.io/bpmn-pma/images/image14.png)
 
 * С помощью артефакта “Аннотация”
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)107]
+![](https://arrumanov.github.io/bpmn-pma/images/image76.png)
 
 * Продвинутый вариант в современных редакторах
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)108]
+![](https://arrumanov.github.io/bpmn-pma/images/image41.png)
 
 4. ### Отображение документов {#отображение-документов}
 
@@ -615,13 +615,13 @@ Start writing and previewing instantly. -->
 
 * С помощью артефакта “Объект данных”
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)109]
+![](https://arrumanov.github.io/bpmn-pma/images/image91.png)
 
 * С помощью артефакта “Аннотация”
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)110]
+![](https://arrumanov.github.io/bpmn-pma/images/image50.png)
 
-* Продвинутые варианты в современных редакторах![](https://arrumanov.github.io/bpmn-pma/images/image.png)111]
+* Продвинутые варианты в современных редакторах![](https://arrumanov.github.io/bpmn-pma/images/image38.png)
 
   5. ### Отображение ограничения времени {#отображение-ограничения-времени}
 
@@ -630,17 +630,17 @@ Start writing and previewing instantly. -->
 
 * Вариант с помощью Событий:
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)112]
+![](https://arrumanov.github.io/bpmn-pma/images/image23.png)
 
 * Продвинутый вариант в современных редакторах, когда за нарушением границ отведенного времени не следует изменения поведения процесса: 
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)113]
+![](https://arrumanov.github.io/bpmn-pma/images/image109.png)
 
 6. ### Отображение старта процесса по запросу от внешнего клиента {#heading}
 
 При запросе от внешнего клиента, старт процесса идентичен кросс-процессному взаимодействию и отображается с помощью получения **Стартового События-Сообщение (Message Event)** или **Простого Стартового События (None Event)**.
 
-### ![](https://arrumanov.github.io/bpmn-pma/images/image.png)114] {#heading}
+### ![](https://arrumanov.github.io/bpmn-pma/images/image82.png) {#heading}
 
 7. ### Отображение взаимодействия с внешним клиентом  {#отображение-взаимодействия-с-внешним-клиентом}
 
@@ -648,27 +648,27 @@ Start writing and previewing instantly. -->
 
 * Вариант 1\. Отображение Потоков сообщения к внешнему свернутому пулу из операций, входом или выходом которых является коммуникация с внешним клиентом)
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)115]
+![](https://arrumanov.github.io/bpmn-pma/images/image118.png)
 
 * **Вариант 2\.** Отправка и получение в одной задаче (если не требуется детализация).
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)116]
+![](https://arrumanov.github.io/bpmn-pma/images/image64.png)
 
 * **Вариант 3\.** Отправка и получение ответа это разные задачи, которые могут выполняться разными ролями, и на задачу получения ответа можно повесить временные ограничения (см. п. 4\)
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)117]
+![](https://arrumanov.github.io/bpmn-pma/images/image32.png)
 
 8. ### Запуск другого процесса без ожидания результата {#запуск-другого-процесса-без-ожидания-результата}
 
 В процессе встречаются случаи, когда данные получаемые в ходе реализации данного процесса инициируют запуск другого процесса, при этом текущий процесс не останавливается и не ждёт результата от другого, а просто передает в него сообщение.
 
-### ![](https://arrumanov.github.io/bpmn-pma/images/image.png)118]
+### ![](https://arrumanov.github.io/bpmn-pma/images/image69.png)
 
 9. ### Запуск другого процесса с ожиданием результата  {#запуск-другого-процесса-с-ожиданием-результата}
 
 Альтернативный вариант описанного в пункте 8, это не только отправка сообщения в сторонний процесс, но и ожидание от стороннего процесса обработанного результата. В момент реализации, основной процесс будет остановлен. В этом случае используется элемент **Вызов действия (Call Activity)**.
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)119]
+![](https://arrumanov.github.io/bpmn-pma/images/image9.png)
 
 10. ### Доработка и исправление {#доработка-и-исправление}
 
@@ -676,9 +676,9 @@ Start writing and previewing instantly. -->
 
 * **Вариант 1**. Одна задача “Разработать / Доработать документ”
 
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)120]
+![](https://arrumanov.github.io/bpmn-pma/images/image12.png)
 
-* **Вариант 2**. Две разные задачи ![](https://arrumanov.github.io/bpmn-pma/images/image.png)121]
+* **Вариант 2**. Две разные задачи ![](https://arrumanov.github.io/bpmn-pma/images/image78.png)
 
   11. ### Прерывание процесса в любой момент {#прерывание-процесса-в-любой-момент}
 
@@ -691,7 +691,7 @@ Start writing and previewing instantly. -->
 * Событие-Условие (Conditional Event)  
 * Событие-Компенсация (Compensation Event)
 
-Вариант отображения (на месте События-Сообщение может быть любой из выше обозначенных в зависимости от контекста процесса)![](https://arrumanov.github.io/bpmn-pma/images/image.png)122]
+Вариант отображения (на месте События-Сообщение может быть любой из выше обозначенных в зависимости от контекста процесса)![](https://arrumanov.github.io/bpmn-pma/images/image107.png)
 
 12. ### Переиспользование процессов {#heading-1}
 
@@ -703,17 +703,17 @@ Start writing and previewing instantly. -->
 * процессы визирования,   
 * автоматизированные процедуры выгрузки данных для разных документов (например: Курс валют) и т.д.
 
-### ![](https://arrumanov.github.io/bpmn-pma/images/image.png)123] {#heading-1}
+### ![](https://arrumanov.github.io/bpmn-pma/images/image93.png) {#heading-1}
 
 13. ### Отправка e-mail, sms, пуш в информационных целях {#отправка-e-mail,-sms,-пуш-в-информационных-целях}
 
 Для оповещения внутренних и внешних клиентов в системах предусмотрены процедуры автоинформирования. Они могут отправляться как в рамках основного потока, так и при наступлении каких-то событий (планируемых или форс-мажорных). Для отображения всегда используется операция **Вызов Сервиса** (Задача-Вызов Сервиса) (Service Task).
 
 **Вариант 1\.** В рамках основного потока  
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)124]
+![](https://arrumanov.github.io/bpmn-pma/images/image52.png)
 
 **Вариант 2\.** Событийный подпроцесс  
-![](https://arrumanov.github.io/bpmn-pma/images/image.png)125]
+![](https://arrumanov.github.io/bpmn-pma/images/image.97png)
 
 14. ### Обработка технических ошибок (перевызовы, счетчики и т.д.) {#обработка-технических-ошибок-(перевызовы,-счетчики-и-т.д.)}
 
